@@ -1,0 +1,11 @@
+wazuh-install-files.tar
+wazuh-passwords.txt
+*.kdbx
+*.pem
+*.key
+.env
+*.iso
+*.vdi
+*.ova
+Thumbs.db
+desktop.ini
