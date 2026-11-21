@@ -70,18 +70,18 @@ A detecção automática do ruleset padrão funciona dentro do esperado
 ## Evidências
 
 Detecção do ataque de força bruta
-![Detecção do ataque](C:\Users\jccar\mini-soc-wazuh\evidencias\incidente-ssh-bruteforce\01-deteccao-falha-login.png)
+![Detecção do ataque](..\evidencias\incidente-ssh-bruteforce\01-deteccao-falha-login.png)
 
 Adicionado o IP no DROP do iptables via wazuh
-![IP Drop Wazuh](C:\Users\jccar\mini-soc-wazuh\evidencias\incidente-ssh-bruteforce\02-active-response-add.png)
+![IP Drop Wazuh](..\evidencias\incidente-ssh-bruteforce\02-active-response-add.png)
 
-![IP Drop iptables](C:\Users\jccar\mini-soc-wazuh\evidencias\incidente-ssh-bruteforce\04-iptables-drop-ativo.png.png)
+![IP Drop iptables](..\evidencias\incidente-ssh-bruteforce\04-iptables-drop-ativo.png)
 
 Tentativa de pingar o IP do host pelo atacante, provando que a conexão foi cortada
-![IP Ping Atacante no host](C:\Users\jccar\mini-soc-wazuh\evidencias\incidente-ssh-bruteforce\05-ping-100-perda.png)
+![IP Ping Atacante no host](..\evidencias\incidente-ssh-bruteforce\05-ping-100-perda.png)
 
 Removido o IP do iptables via wazuh
-![IP removido iptables via wazuh](C:\Users\jccar\mini-soc-wazuh\evidencias\incidente-ssh-bruteforce\03-active-response-delete.png)
+![IP removido iptables via wazuh](..\evidencias\incidente-ssh-bruteforce\03-active-response-delete.png)
 ## Referências
 
 https://documentation.wazuh.com/current/user-manual/capabilities/active-response/ar-use-cases/blocking-ssh-brute-force.html

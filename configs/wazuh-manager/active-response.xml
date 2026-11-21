@@ -1,0 +1,10 @@
+<!-- bloco abaixo é a regra de detecção automática e deve ser adicionado no arquivo /var/ossec/etc/ossec.conf após a última linha -->
+<ossec_config>
+  <active-response>
+    <disabled>no</disabled>
+    <command>firewall-drop</command>
+    <location>local</location>
+    <rules_id>5712,5763</rules_id>
+    <timeout>180</timeout>
+  </active-response>
+</ossec_config>
