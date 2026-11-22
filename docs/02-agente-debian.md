@@ -94,8 +94,8 @@ sudo apt-get update
 
 - `systemctl status wazuh-agent`: `active (running)`
 - `debian-alvo` aparece como **Active** no dashboard
-- SCA (CIS Debian 13) rodou: **Score 38%** (73 aprovadas, 115 reprovadas, 19 não aplicáveis). Baseline em `evidencias/`
-- Detecção de vulnerabilidades rodou. Baseline exportada em `evidencias/`
+- SCA (CIS Debian 13) rodou: **Score 38%** (73 aprovadas, 115 reprovadas, 19 não aplicáveis). Baseline em `evidencias/sca-hardening/baseline-instalacao.csv`
+- Detecção de vulnerabilidades rodou. Baseline em `evidencias/vulnerabilidades/antes-dos-patches.png`
 
 ## Referências
 

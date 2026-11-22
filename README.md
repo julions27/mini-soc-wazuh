@@ -5,7 +5,7 @@ Laboratório defensivo (Blue Team) montado do zero para **detectar, responder e 
 ## Resultados em destaque
 
 - 🔎 **Gestão de vulnerabilidades:** de **7.135 para 352** vulnerabilidades detectadas (**−95%**) após aplicação de patches, com baseline antes/depois registrada.
-- 🚨 **Incidente de força bruta SSH** detectado, **bloqueado automaticamente** (resposta ativa) e revertido, com relatório no modelo **NIST SP 800-61**.
+- 🚨 **Incidente de força bruta SSH** detectado, **bloqueado automaticamente** (resposta ativa) **8 segundos** após a primeira tentativa errada e revertido, com relatório no modelo **NIST SP 800-61**.
 - 🛡️ **Hardening (CIS Benchmark):** nota do Debian de **38% para 43%**, com as decisões de escopo documentadas.
 
 ## Arquitetura do lab
@@ -47,10 +47,21 @@ flowchart LR
 
 ```
 .
-├── docs/            # runbooks, relatório de incidente, playbook, hardening
-├── configs/         # configurações reais aplicadas (sshd_config, resposta ativa)
-└── evidencias/      # prints e CSVs que comprovam cada etapa
+├── docs/                          # runbooks, relatório de incidente, playbook, hardening
+├── configs/                       # configurações reais aplicadas (sshd_config, resposta ativa)
+└── evidencias/                    # prints e CSVs que comprovam cada etapa
+    ├── vulnerabilidades/          # painel de vulnerabilidades antes/depois dos patches
+    ├── incidente-ssh-bruteforce/  # prints do ataque de força bruta SSH
+    └── sca-hardening/             # exportações do SCA (CIS)
 ```
+
+## Documentação
+
+1. [Instalação do servidor Wazuh](docs/01-instalacao-wazuh.md)
+2. [Agente Wazuh no Debian](docs/02-agente-debian.md)
+3. [Relatório de incidente — força bruta SSH](docs/03-relatorio-forca-bruta-ssh.md)
+4. [Playbook de resposta a força bruta SSH](docs/04-playbook-forca-bruta-ssh.md)
+5. [Hardening do Debian](docs/05-hardening-debian.md)
 
 ## Fases do projeto
 

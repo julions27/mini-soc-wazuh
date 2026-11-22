@@ -25,10 +25,10 @@ Política padrão de saída definida como `deny`, liberando apenas as portas efe
 Nota CIS: **38% → 43%**
 
 Antes:
-![Antes](../evidencias/antes-depois-debian-csa/Antes.png)
+![Antes](../evidencias/sca-hardening/antes-hardening.png)
 
 Depois:
-![Depois](../evidencias/antes-depois-debian-csa/Depois.png)
+![Depois](../evidencias/sca-hardening/depois-hardening.png)
 
 ## Por que parei aqui?
 
